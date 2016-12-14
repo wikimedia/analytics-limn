@@ -1,11 +1,12 @@
 # Limn &mdash; a GUI Visualization Toolkit
 
+
+| WARNING: WMF's Analytics team is no longer maintaining this project. It has been deprecated in favor of [Dashiki][dashiki]. |
+| --------------------------------------------------------------------------------------------------------------------------- |
+
 Limn is a GUI for constructing beautiful visualizations without need of programming skills.
 
-<center>[![Limn Screenshot][limn_screenshot]][wmf_reportcard]</center>
-
-[Play with it!][limn_sample_graph] The [Wikimedia Reportcard][wmf_reportcard] site is powered by Limn &mdash; check it out!
-
+<center>![Limn Screenshot][limn_screenshot]</center>
 
 ## Features
 
@@ -36,7 +37,6 @@ Excited? Here are some good places to go from here:
 
  - Curious how Limn could help your team visualize data? Check out the [Feature Walkthrough][limn_features] for a better idea of what Limn can do, or the [Roadmap][limn_roadmap] for where we're going.
  - Want to run Limn? Read over the docs available on [the Limn wiki][limn_wiki]. "[Getting Started][limn_getting_started]" seems like it might be a good place to start.
- - Once you've done that, [the source][wmf_reportcard_github] to WMF's production instance of Limn, [the monthly Reportcard][wmf_reportcard], might serve as a useful guide.
  - Finally, if you're interested in hacking on Limn (&hearts;!), check out the notes on [Contributing][limn_contributing] and on [Project Internals][limn_internals].
 
 
@@ -48,18 +48,18 @@ The fastest way to get Limn up and running:
 
 ```
 git clone git@github.com:wikimedia/limn.git
+cd limn
 npm install
 npm i -g coco
 npm start
 ```
 
- * Configure one or more of the following data repositories:
+Take a look at this example of data repository:
  * [Limn Example Data][limn_data]
- * [Limn Editor Engagement Data][limn_editor_engagement]
 
 ## Feedback
 
-Limn is made with love by [the Wikimedia Foundation's Analytics team][wmf_analytics], and [we'd love to hear from you][dsc_email], whether it's because you found a bug, have suggestions, or want to contribute! For mundane things, open a ticket (or fork the project!) on [GitHub][limn]. You can also send Dave a charming email at [dsc@wikimedia.org][dsc_email].
+Limn was built with love by [the Wikimedia Foundation's Analytics team][wmf_analytics], but currently the team has deprecated it in favor of another dashboarding tool: [Dashiki][dashiki]. If you want to contribute to Limn nevertheless, [we'd love to hear from you][dsc_email]. You can also send Dave a charming email at [dsc@wikimedia.org][dsc_email].
 
 
 --
@@ -85,14 +85,10 @@ Limn is open-source software, freely available under the MIT License.
 [limn_editor_engagement]: https://github.com/wikimedia/limn-editor-engagement "Limn Editor Engagement Data"
 [develop_branch]: https://github.com/wikimedia/limn/tree/develop
 [dsc_email]: mailto:dsc@wikimedia.org "dsc@wikimedia.org"
-
 [wmf_analytics]: https://www.mediawiki.org/wiki/Analytics "Wikimedia Analytics team"
-[wmf_reportcard]: http://reportcard.wmflabs.org "The Wikimedia Foundation Monthly Reportcard"
-[wmf_reportcard_github]: https://gerrit.wikimedia.org/r/p/analytics/reportcard/data.git "WMF Reportcard source code"
-
-
 [nodejs]: http://nodejs.org/ "node.js"
 [npm]: http://npmjs.org/ "npm"
 [d3]: http://d3js.org "d3.js"
 [express]: http://expressjs.com "Express"
 [connect]: http://senchalabs.org/connect "Connect"
+[dashiki]: https://github.com/wikimedia/analytics-dashiki
